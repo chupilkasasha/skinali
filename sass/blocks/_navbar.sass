@@ -1,0 +1,106 @@
+html
+  
+.wrap
+  height: 1500px
+  
+.header
+  width: 100%
+  
+.navbar-wrap
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  -webkit-box-shadow: 2px 13px 12px -18px rgba(41,41,41,1)
+  -moz-box-shadow: 2px 13px 12px -18px rgba(41,41,41,1)
+  box-shadow: 2px 13px 12px -18px rgba(41,41,41,1)
+  background-color: white
+  
+.navbar
+  display: flex
+  justify-content: space-between
+  align-items: center
+  border: 0px solid red
+  height: 80px
+  
+
+  &-small-text
+    font-size: 14px
+    text-decoration: none
+    color: $text-color-light
+    text-align: right
+    display: block
+    
+  &_phone
+    font-size: 18px
+    display: block
+    +bold
+    text-align: right
+    text-decoration: none
+    color: $text-color
+    margin-bottom: 3px
+.button-menu
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  border: none
+  border-left: 1px solid rgba(#ababab, 0.2)
+  border-right: 1px solid rgba(#ababab, 0.2)
+  background-color: transparent
+  width: 70px
+  height: 80px
+
+.menu-button_line
+  display: block
+  width: 25px
+  height: 2px
+  background-color: blue
+  margin-bottom: 8px
+
+.navbar_logo
+  display: block
+
+.logo
+  &_text
+    font-size: 18px
+    text-transform: uppercase
+    display: block
+    margin-bottom: 6px
+    +bold
+  &_description
+    text-transform: uppercase
+    display: block
+    font-size: 12px
+    color: $text-color-light
+
+.menu
+  position: fixed
+  top: 80px
+  width: 100%
+  padding: 10px 0
+  background: $prime-color
+  transition: 1s
+  transform: translateY(-100%)
+  &_active
+    transform: translateY(0%)
+  
+  &_nav
+    display: flex
+    justify-content: space-around
+    align-items: center
+  &_link
+    color: $white
+    text-decoration: none
+    text-transform: uppercase
+
+
+  
+
+  
+
+
+
+
+
+

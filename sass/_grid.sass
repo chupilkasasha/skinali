@@ -1,0 +1,38 @@
+*
+  box-sizing: border-box
+//базовые настройки сетки
+
+.container
+  max-width: 1170px
+  margin: 0 auto
+  border: 0px solid black
+
+@media (max-width: 1199px)
+  .container
+   max-width: 900px
+
+@media (max-width: 768px)
+  .container
+    max-width: 100%
+    padding: 0 20px
+  .navbar-mobile, .navbar-desk-phone, 
+    display: none
+
+  .menu
+    &_link
+      font-size: 12px
+
+@media (max-width: 570px)
+  .button-o.navbar-button
+    padding: 8px 15px
+  .logo.navbar_logo
+    display: none
+  .button-o
+    font-size: 16px
+  .menu_nav
+    flex-direction: column
+
+  .menu
+    display: none
+    &_link
+      padding: 5px
